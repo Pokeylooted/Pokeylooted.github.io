@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's pokey and I'm system administrator. As well as administrating systems I also have experience making software and web apps. I channel my own passion, and create projects as robust as efficient as I can till I get my own Jarvis. For me, every line of code is a opportunity to learn and improve.
+  Hi, I go by Pokey and I'm a system administrator. As well as administrating systems I also have experience making software and web apps. I channel my own passion, and create projects as robust as efficient as I can till I get my own Jarvis. For me, every line of code is a opportunity to learn and improve.
 
   I am most skilled in: <mark>FastAPI</mark> and <mark>Eating Pizza</mark>
 
