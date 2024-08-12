@@ -18,7 +18,7 @@ darkmode: true
 twitter_username: Pokeylooted
 github_username:  Pokeylooted
 discord_username: .pokeyy
-# stackoverflow_username: "00000001"
+stackoverflow_username: "26754392"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -131,17 +131,18 @@ content:
       - Aeronautics
       - Gaming
       - Skydiving
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - Learning too fly
 
-      Look at this cool image  
-      ![Trees](/Pokeylooted.github.io/images/landscape-trees.jpg "Trees")
+      Me writing print(Hello World!):  
+      ![Developing](/Pokeylooted.github.io/images/tony.jpg "Developing")
 
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
 
 # Build settings
-remote_theme: Pokeylooted/Pokeylooted.github.io 
+remote_theme: sproogen/resume-theme
+
 
 sass:
   sass_dir: _sass
