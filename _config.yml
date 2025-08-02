@@ -98,7 +98,7 @@ content:
         quote: >
           Added support for more Ollama models + Azure indexing – PR #1356
         description: |
-          I added support for multiple Ollama embedding models plus Azure-based codebase indexing in the Kilo‑Code extension. :contentReference[oaicite:2]{index=2}
+          I added support for multiple Ollama embedding models plus Azure-based codebase indexing in the Kilo‑Code extension.
 
       - layout: top-middle
         title: nixpkgs / NixOS – official repository contributions
@@ -108,7 +108,7 @@ content:
             icon: fab fa-github
             url: https://github.com/NixOS/nixpkgs
         description: |
-          I manage packages on the repo and also have submitted patches and module changes to the official nixpkgs repository.  :contentReference[oaicite:3]{index=3}
+          I manage packages on the repo and also have submitted patches and module changes to the official nixpkgs repository.
   - title: Automation & Security # Title for the section
     layout: list # Type of content section (list/text)
     content:
