@@ -49,7 +49,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I go by Pokey and I'm a system administrator. As well as administrating systems I also have experience making software and web apps. I channel my own passion, and create projects as robust as efficient as I can till I get my own Jarvis. For me, every line of code is a opportunity to learn and improve.
+  Hi, I go by Pokey and I'm a system administrator. As well as administrating systems I also have experience making software and web apps. I channel my passion into creating projects that are as robust and efficient as possible, until I can build my own Jarvis. For me, every line of code is a opportunity to learn and improve.
 
   I am most skilled in: <mark>FastAPI</mark> and <mark>Eating Pizza</mark>
 
@@ -57,6 +57,17 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: top-middle
+        title: PortfolioTUI - Portfolio Viewer in Rust
+        link: github.com/Pokeylooted/portfolio-tui
+        additional_links:
+          - title: pokeylooted/portfolio-tui
+            icon: fab fa-github
+            url: github.com/Pokeylooted/portfolio-tui
+        quote: >
+          Create with the heart; build with the mind.
+        description: |
+          This is a project I made to showcase my skills in <mark>Rust</mark>. It dynamically pulls data from the same config file that powers this site, and makes full use of Rust’s blazing fast performance.
       - layout: top-middle
         title: Shard - A FOSS Clipping software
         link: github.com/pokeylooted/Shard
