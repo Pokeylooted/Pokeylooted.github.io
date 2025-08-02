@@ -72,7 +72,43 @@ content:
           This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
           I started this project as a way of learning <mark>React</mark> and <mark>FastAPI</mark>, it has since then grown into a fullstack app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+      - layout: top-middle
+        title: BuyerBot – Token-Based Scraping Platform
+        quote: >
+          A full SaaS system with real-time job tracking, auth, billing, and worker infrastructure.
+        description: |
+          BuyerBot is a private SaaS app I built to monitor websites and act on stock availability. The backend handles authentication, token-based billing, and job orchestration with <mark>Redis</mark>. Workers process jobs with <mark>Golang</mark> and report stats via <mark>WebSockets</mark>. The frontend uses <mark>Next.js</mark> and <mark>Mantine UI</mark> to offer clean control panels for users.
 
+      - layout: top-middle
+        title: Infrastructure Work – Systems & Networking
+        quote: >
+          I focus on reproducibility, automation, and secure remote access.
+        description: |
+          I’ve set up and maintained systems using <mark>NixOS</mark>, <mark>Talos Linux</mark>, and <mark>openSUSE MicroOS</mark>, with a focus on container-first and immutable setups. I manage remote access using <mark>WireGuard</mark> and <mark>JRE tunneling</mark> over <mark>pfSense</mark> for better auditability and isolation. My setups prioritize automation, stability, and minimal human error.
+  - title: Contributions
+  layout: list
+  content:
+    - layout: top-middle
+      title: Kilo‑Code – Kilo‑Org/kilocode pull request
+      link: https://github.com/Kilo-Org/kilocode/pull/1356
+      additional_links:
+        - title: Pull Request #1356
+          icon: fab fa-github
+          url: https://github.com/Kilo-Org/kilocode/pull/1356
+      quote: >
+        Added support for more Ollama models + Azure indexing – PR #1356
+      description: |
+        I added support for multiple Ollama embedding models plus Azure-based codebase indexing in the Kilo‑Code extension. :contentReference[oaicite:2]{index=2}
+
+    - layout: top-middle
+      title: nixpkgs / NixOS – official repository contributions
+      link: https://github.com/NixOS/nixpkgs
+      additional_links:
+        - title: NixOS/nixpkgs
+          icon: fab fa-github
+          url: https://github.com/NixOS/nixpkgs
+      description: |
+        I manage packages on the repo and also have submitted patches and module changes to the official nixpkgs repository.  :contentReference[oaicite:3]{index=3}
   - title: Automation & Security # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -129,9 +165,9 @@ content:
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
       - Aeronautics
-      - Gaming
+      - Immortal in Valo
+      - SSL RL 
       - Skydiving
-      - Learning too fly
 
       Me writing print(Hello World!):  
       ![Developing](/images/tony.jpg "Developing")
