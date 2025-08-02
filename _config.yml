@@ -86,19 +86,19 @@ content:
         description: |
           I’ve set up and maintained systems using <mark>NixOS</mark>, <mark>Talos Linux</mark>, and <mark>openSUSE MicroOS</mark>, with a focus on container-first and immutable setups. I manage remote access using <mark>WireGuard</mark> and <mark>JRE tunneling</mark> over <mark>pfSense</mark> for better auditability and isolation. My setups prioritize automation, stability, and minimal human error.
   - title: Contributions
-  layout: list
-  content:
-    - layout: top-middle
-      title: Kilo‑Code – Kilo‑Org/kilocode pull request
-      link: https://github.com/Kilo-Org/kilocode/pull/1356
-      additional_links:
-        - title: Pull Request #1356
-          icon: fab fa-github
-          url: https://github.com/Kilo-Org/kilocode/pull/1356
-      quote: >
-        Added support for more Ollama models + Azure indexing – PR #1356
-      description: |
-        I added support for multiple Ollama embedding models plus Azure-based codebase indexing in the Kilo‑Code extension. :contentReference[oaicite:2]{index=2}
+    layout: list
+    content:
+      - layout: top-middle
+        title: Kilo‑Code – Kilo‑Org/kilocode pull request
+        link: https://github.com/Kilo-Org/kilocode/pull/1356
+        additional_links:
+          - title: Pull Request #1356
+            icon: fab fa-github
+            url: https://github.com/Kilo-Org/kilocode/pull/1356
+        quote: >
+          Added support for more Ollama models + Azure indexing – PR #1356
+        description: |
+          I added support for multiple Ollama embedding models plus Azure-based codebase indexing in the Kilo‑Code extension. :contentReference[oaicite:2]{index=2}
 
     - layout: top-middle
       title: nixpkgs / NixOS – official repository contributions
