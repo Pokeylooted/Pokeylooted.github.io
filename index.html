@@ -1,0 +1,431 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en" class="scheme-only-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokeylooted — Developer & Sysadmin</title>
+  <meta name="description" content="Sysadmin and developer. I build robust systems, automate the boring stuff, and ship software that works.">
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-sans: "InterVariable", "Inter", sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    body {
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01", "ss03";
+    }
+  </style>
+</head>
+<body class="antialiased bg-neutral-950 text-neutral-100 font-sans isolate">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-neutral-950/90 backdrop-blur border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="/" class="font-mono text-sm text-emerald-400 font-medium">pokey@dev:~$</a>
+      <nav aria-label="Main navigation">
+        <ul role="list" class="flex items-center gap-6 text-sm">
+          <li class="max-sm:hidden"><a href="#projects" class="text-neutral-400 hover:text-neutral-100">projects</a></li>
+          <li class="max-sm:hidden"><a href="#contributions" class="text-neutral-400 hover:text-neutral-100">contributions</a></li>
+          <li class="max-sm:hidden"><a href="#about" class="text-neutral-400 hover:text-neutral-100">about</a></li>
+          <li>
+            <a href="https://github.com/Pokeylooted" class="text-neutral-400 hover:text-neutral-100" aria-label="GitHub profile">
+              <svg class="size-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-24 sm:py-36">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-6">./hello-world</p>
+      <h1 class="text-5xl sm:text-7xl font-semibold tracking-tight text-balance max-w-[20ch]">
+        Hi, I'm <span class="text-emerald-400">Pokey</span>.
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-neutral-300 max-w-[44ch] text-pretty">
+        Sysadmin and developer. I build robust systems, automate the boring stuff, and ship software that works — from NixOS clusters to full-stack SaaS apps.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="https://github.com/Pokeylooted" class="inline-flex items-center gap-2 bg-emerald-400 text-neutral-950 font-medium py-2 pl-3 pr-4 rounded-lg text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400">
+          <svg class="size-4 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          View GitHub
+        </a>
+        <a href="mailto:contact@exorbgn.net" class="inline-flex items-center gap-2 bg-neutral-800 text-neutral-100 font-medium py-2 px-4 rounded-lg text-sm ring-1 ring-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400">
+          contact@exorbgn.net
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-3">./projects</p>
+        <h2 class="text-4xl font-semibold tracking-tight text-balance max-w-[35ch]">Things I've built</h2>
+        <p class="mt-4 text-neutral-400 max-w-[48ch] text-pretty">Personal tools, private SaaS, and infrastructure work. Some open-source, some not.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+        <!-- PortfolioTUI -->
+        <a href="https://github.com/Pokeylooted/portfolio-tui" class="group flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100 group-hover:text-emerald-400">PortfolioTUI</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">Rust · 2 ★</p>
+            </div>
+            <svg class="size-5 shrink-0 text-neutral-700 group-hover:text-emerald-400/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+            </svg>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">A TUI that dynamically pulls data from the same YAML config powering this site. Full use of Rust's performance and the ratatui ecosystem.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-emerald-400 ring-1 ring-white/5">Rust</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">TUI</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">CLI</span>
+          </div>
+        </a>
+
+        <!-- Shard -->
+        <a href="https://github.com/Pokeylooted/Shard" class="group flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100 group-hover:text-emerald-400">Shard</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">Docker · 2 ★</p>
+            </div>
+            <svg class="size-5 shrink-0 text-neutral-700 group-hover:text-emerald-400/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+            </svg>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">Open-source service to clip and share game footage. Started as a React + FastAPI learning project and grew into a full-stack containerized app.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-orange-400 ring-1 ring-white/5">React</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-teal-400 ring-1 ring-white/5">FastAPI</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-sky-400 ring-1 ring-white/5">Docker</span>
+          </div>
+        </a>
+
+        <!-- BuyerBot -->
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100">BuyerBot</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">Go + Next.js · private</p>
+            </div>
+            <span class="font-mono text-xs text-neutral-600 shrink-0 mt-0.5">closed</span>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">Token-based stock monitoring SaaS. Redis job orchestration, WebSocket stat reporting, token billing, and a Next.js + Mantine control panel.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-cyan-400 ring-1 ring-white/5">Go</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-100 ring-1 ring-white/5">Next.js</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-red-400 ring-1 ring-white/5">Redis</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">WebSockets</span>
+          </div>
+        </div>
+
+        <!-- ZSM -->
+        <a href="https://github.com/Pokeylooted/ZSM" class="group flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100 group-hover:text-emerald-400">ZSM</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">TypeScript · 2026</p>
+            </div>
+            <svg class="size-5 shrink-0 text-neutral-700 group-hover:text-emerald-400/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+            </svg>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">Custom MCP server for blazing-fast semantic search over the entire Zig docs and ecosystem. Scraped thousands of Zig projects, embedded them into a vector database, and exposed the index through the Model Context Protocol.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-blue-400 ring-1 ring-white/5">TypeScript</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">MCP</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Vector DB</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-emerald-400/80 ring-1 ring-white/5">Zig</span>
+          </div>
+        </a>
+
+        <!-- TorboxTV -->
+        <a href="https://github.com/Pokeylooted/TorboxTV" class="group flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100 group-hover:text-emerald-400">TorboxTV</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">Python · 2025</p>
+            </div>
+            <svg class="size-5 shrink-0 text-neutral-700 group-hover:text-emerald-400/50 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+            </svg>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">DIY TV channel creator powered by Torbox Debrid. Set up your own locale TV station with a custom lineup and stream content like a real cable provider — without the cable bill.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-yellow-400 ring-1 ring-white/5">Python</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Torbox</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Streaming</span>
+          </div>
+        </a>
+
+        <!-- Infrastructure -->
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-6">
+          <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="min-w-0">
+              <h3 class="font-semibold text-neutral-100">Infrastructure</h3>
+              <p class="font-mono text-xs text-neutral-500 mt-0.5">NixOS · Talos · pfSense</p>
+            </div>
+            <span class="font-mono text-xs text-neutral-600 shrink-0 mt-0.5">sysadmin</span>
+          </div>
+          <p class="text-sm text-neutral-400 text-pretty grow">Container-first, immutable system setups using NixOS, Talos Linux, and openSUSE MicroOS. WireGuard + JRE tunneling over pfSense for auditable remote access.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-purple-400 ring-1 ring-white/5">NixOS</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Talos</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">WireGuard</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">pfSense</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Agency Work -->
+  <section class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-3">./agency</p>
+        <h2 class="text-4xl font-semibold tracking-tight text-balance max-w-[35ch]">Agency platform work</h2>
+        <p class="mt-4 text-neutral-400 max-w-[48ch] text-pretty">Full-stack SaaS suite built for an agency. Under NDA — details are intentionally high-level.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Training Platform</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Guides, shadowing flows, and progress tracking for onboarding and staff development.</p>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">AI Voice Notes</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Multi-model AI voice note system spanning all major providers.</p>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Creator CRM + LLM</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Custom CRM with Fansly-specific support. Fine-tuned a 32B LLM on historical messages to give real-time script recommendations to chatters.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-purple-400 ring-1 ring-white/5">32B LLM</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Fine-tuning</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Finance Dashboard</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Pulled Infloww reports, PayPal, and Fansly revenue into a single dashboard. Auto payroll via Wise, custom billing emails, creator-facing payment breakdown with multi-processor discounts.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Wise API</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">PayPal</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Remote Device Control</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">iPhones controlled remotely for account managers to post social content — all managed through a web interface.</p>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">DRM Video + DAVE Protocol</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">FairPlay and Widevine DRM-protected video delivery. Reverse-engineered Discord's DAVE E2EE protocol to stream content outside Discord in a custom client.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">FairPlay</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">Widevine</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">RE</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">AI LoRA Training</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Trained LoRAs on hybrid and inactive models for content generation. Video AI pipeline to show models how to pose for specific scenes.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-purple-400 ring-1 ring-white/5">LoRA</span>
+            <span class="font-mono text-xs px-2 py-0.5 rounded bg-neutral-800 text-neutral-400 ring-1 ring-white/5">AI Gen</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Custom Discord Infrastructure</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Discord bot connecting all platform features to Discord. Built a custom Discord-compatible client to avoid TOS risk while keeping the UX familiar.</p>
+        </div>
+
+        <div class="flex flex-col rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+          <h3 class="font-semibold text-neutral-100 mb-2">Creator Onboarding</h3>
+          <p class="text-sm text-neutral-400 text-pretty grow">Creator-facing site for content uploads, edit requests, and workflow management — all branded per client.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contributions -->
+  <section id="contributions" class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-3">./contributions</p>
+        <h2 class="text-4xl font-semibold tracking-tight text-balance max-w-[35ch]">Open-source work</h2>
+        <p class="mt-4 text-neutral-400 max-w-[48ch] text-pretty">Pull requests, packages, and patches to projects I use and believe in.</p>
+      </div>
+      <ul role="list" class="flex flex-col gap-4">
+        <li>
+          <a href="https://github.com/Kilo-Org/kilocode/pull/1356" class="group flex items-start gap-4 rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+            <div class="size-8 rounded-full bg-emerald-400/10 ring-1 ring-emerald-400/20 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="size-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="min-w-0">
+              <p class="font-medium text-neutral-100 group-hover:text-emerald-400">Kilo-Code — PR #1356 <span class="font-mono text-xs text-neutral-600 ml-1">merged</span></p>
+              <p class="text-sm text-neutral-400 mt-1 text-pretty">Added support for multiple Ollama embedding models and Azure-based codebase indexing in the Kilo-Code VS Code AI extension.</p>
+              <p class="font-mono text-xs text-neutral-600 mt-2">kilo-org/kilocode</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/NixOS/nixpkgs" class="group flex items-start gap-4 rounded-xl bg-neutral-900 ring-1 ring-white/5 p-5">
+            <div class="size-8 rounded-full bg-purple-400/10 ring-1 ring-purple-400/20 flex items-center justify-center shrink-0 mt-0.5">
+              <svg class="size-4 text-purple-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+              </svg>
+            </div>
+            <div class="min-w-0">
+              <p class="font-medium text-neutral-100 group-hover:text-emerald-400">NixOS / nixpkgs <span class="font-mono text-xs text-neutral-600 ml-1">ongoing</span></p>
+              <p class="text-sm text-neutral-400 mt-1 text-pretty">Package management, patches, and module changes submitted to the official nixpkgs repository.</p>
+              <p class="font-mono text-xs text-neutral-600 mt-2">nixos/nixpkgs</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12">
+        <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-3">./stack</p>
+        <h2 class="text-4xl font-semibold tracking-tight text-balance max-w-[35ch]">What I work with</h2>
+      </div>
+      <dl class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+        <div>
+          <dt class="font-mono text-xs text-neutral-500 uppercase tracking-wide mb-4">Languages</dt>
+          <dd class="flex flex-wrap gap-2">
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-emerald-400">Rust</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-cyan-400">Go</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-blue-400">TypeScript</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-yellow-400">Python</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-purple-400">Nix</span>
+          </dd>
+        </div>
+        <div>
+          <dt class="font-mono text-xs text-neutral-500 uppercase tracking-wide mb-4">Web / Backend</dt>
+          <dd class="flex flex-wrap gap-2">
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-teal-400">FastAPI</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-orange-400">React</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-neutral-100">Next.js</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-red-400">Redis</span>
+          </dd>
+        </div>
+        <div>
+          <dt class="font-mono text-xs text-neutral-500 uppercase tracking-wide mb-4">Infrastructure</dt>
+          <dd class="flex flex-wrap gap-2">
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-purple-400">NixOS</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-neutral-400">Talos</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-sky-400">Docker</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-neutral-400">WireGuard</span>
+            <span class="font-mono text-sm px-3 py-1 rounded-lg bg-neutral-900 ring-1 ring-white/5 text-neutral-400">pfSense</span>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-start">
+        <div>
+          <p class="font-mono text-emerald-400 text-sm uppercase tracking-wide mb-3">./about</p>
+          <h2 class="text-4xl font-semibold tracking-tight text-balance max-w-[35ch]">Average person making some programs</h2>
+          <p class="mt-4 text-neutral-400 max-w-[48ch] text-pretty">
+            Sysadmin and developer with a focus on reproducibility, automation, and secure systems. I channel my passion into building things that are robust and efficient. The end goal is my own Jarvis — we're getting there one project at a time.
+          </p>
+          <p class="mt-4 text-neutral-400 max-w-[48ch] text-pretty">
+            Most skilled in <span class="font-mono text-emerald-400 bg-emerald-400/5 px-1.5 py-0.5 rounded">FastAPI</span> and <span class="font-mono text-emerald-400 bg-emerald-400/5 px-1.5 py-0.5 rounded">Eating Pizza</span>.
+          </p>
+          <div class="mt-8">
+            <p class="font-mono text-xs text-neutral-500 uppercase tracking-wide mb-4">When I'm not at a terminal</p>
+            <ul role="list" class="flex flex-col gap-2.5">
+              <li class="flex items-center gap-3 text-neutral-400">
+                <span class="font-mono text-emerald-400 text-xs w-5 shrink-0 tabular-nums">01</span>
+                Aeronautics
+              </li>
+              <li class="flex items-center gap-3 text-neutral-400">
+                <span class="font-mono text-emerald-400 text-xs w-5 shrink-0 tabular-nums">02</span>
+                Immortal in Valorant
+              </li>
+              <li class="flex items-center gap-3 text-neutral-400">
+                <span class="font-mono text-emerald-400 text-xs w-5 shrink-0 tabular-nums">03</span>
+                SSL in Rocket League
+              </li>
+              <li class="flex items-center gap-3 text-neutral-400">
+                <span class="font-mono text-emerald-400 text-xs w-5 shrink-0 tabular-nums">04</span>
+                Skydiving
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:pt-14">
+          <img src="/images/profile.jpg" alt="Pokey" class="w-36 rounded-2xl ring-1 ring-white/10">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="font-mono text-sm text-neutral-600">pokey@dev:~$ <span class="text-neutral-500">exit 0</span></p>
+      <div class="flex items-center gap-5">
+        <a href="https://github.com/Pokeylooted" class="text-neutral-600 hover:text-neutral-300" aria-label="GitHub">
+          <svg class="size-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com/Pokeylooted" class="text-neutral-600 hover:text-neutral-300" aria-label="Twitter / X">
+          <svg class="size-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://discord.com/users/.pokeyy" class="text-neutral-600 hover:text-neutral-300" aria-label="Discord">
+          <svg class="size-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+          </svg>
+        </a>
+        <a href="mailto:contact@exorbgn.net" class="text-neutral-600 hover:text-neutral-300" aria-label="Email">
+          <svg class="size-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
